@@ -78,3 +78,26 @@ form of choices.
                     }
                 ]
             }
+
+### Put a Question [PUT]
+
++ Request (application/json)
+
+        {
+            "question": "Favourite programming language?",
+            "choices": [
+                "Swift",
+                "Python",
+                "Objective-C",
+                "Ruby"
+            ]
+        }
+
++ Response 200 (application/json)
+
+    + Body
+
+        {
+                "question": "Favourite programming language?",
+                "success" = 1
+        }
