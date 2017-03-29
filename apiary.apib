@@ -122,15 +122,18 @@ Deletes a questions form service
 
 + Response 200 (application/json)
 
-        {
-            [
-                {
-                    "answerdata": "Answer1",
-                    "answerid": "123213q"
-                },
-                {
-                    "answerdata": "Answer2",
-                    "answerid": "882bv2"
-                }
-            ]
-        }
+    + Body
+
+               {
+                    "answers" :
+                            [
+                                {
+                                    "answerdata" : "Answer1",
+                                    "answerid" : "123213q"
+                                },
+                                {
+                                    "answerdata" : "Answer2",
+                                    "answerid" : "uuuuuuuuuuuuu"
+                                }
+                            ]
+            }
